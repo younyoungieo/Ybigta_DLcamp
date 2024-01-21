@@ -6,11 +6,6 @@ import logging
 
 from YBIGTA.tokenizers import BPETokenizer, WordTokenizer
 
-logging.basicConfig(level=logging.DEBUG, filename="tokenizers.log", filemode="w",
-                    format="%(asctime)s - %(levelname)s - %(message)s")
-logging.debug('Detailed Info')
-logging.info('It is Working')
-
 def load_corpus(
     url: str = "https://huggingface.co/datasets/cnn_dailymail/resolve/2d2c6100ccd17c0b215f85c38e36c4e7a5746425/data/cnn_stories.tgz",
     dl_name: str = "dataset.tgz",
